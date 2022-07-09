@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-8" *ngFor="let book of books">
+        <app-product-item [book]="book"></app-product-item>
+    </div>
+    <div class="col-md-12">
+        <p class="alert alert-danger w-75 text-center d-none" id="book-error">
+            Não Foi possível Listar os Livros, tente novamente mais tarde.
+        </p>
+    </div>
+</div>
